@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* selctor {
+            property-name: value;
+        } */
+        
+
+        /* Tag Selector */
+        h1 {
+            color: purple;
+        }
+
+        /* ID Selector */
+        #title {
+            color: green;
+        }
+
+        /* Class Selector */
+        .subtitle {
+            color: skyblue;
+        }
+
+        /* General Child Selector */
+        header h4 {
+            color: orange;
+        }
+
+        /* Direct Child Selector */
+        header > h4 {
+            color: orchid;
+        }
+
+        /* Direct Sibling Selector */
+        h1 + h4 {
+            color: blue;
+        }
+
+        /* General Sibling Selector */
+        h1 ~ h4 {
+            color: pink;
+        }
+
+        /* Class Concatenation in selectors */
+        h4.active.subtitle {
+            background-color: yellow;
+        }
+
+        /* Select by attribut */
+        [data-name^="me"] {
+            color: pink;
+        }
+
+        input[type="email"] {
+            background-color: yellow;
+        }
+
+        /* PSUEDO SELECTORS */
+        /* li:first-child {
+            background-color: wheat;
+        }
+
+        li:last-child {
+            background-color: brown;
+        }
+
+        li:nth-child(4) {
+            background-color: cadetblue;
+        } */
+
+        /* li:nth-child(4n - 1) {
+            background-color: cadetblue;
+        } */
+
+        /* h4.subtitle:first-of-type {
+            background-color: chartreuse;
+        } */
+
+        .demo {
+            background-color: #afafaf;
+            padding: 0 50px;
+        }
+
+        .demo p {
+            background-color: darkolivegreen;
+            color: white;
+        }
+
+        .demo p:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        h4:not(.subtitle) {
+            background-color: blue;
+        }
+
+
+        h4:hover {
+            opacity: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <main class="content">
+
+        <header class="header">
+            <h1 id="title">My Website H1</h1>
+            <h4 class="subtitle" id="yes">Some more bullshit H4</h4>
+            <h4 class="subtitle active">Some more bullshit H4</h4>
+            <h4>akjdf</h4>
+            <div>
+                <h4 class="subtitle">yet <span>ANOTHER</span> line of bullshit H4</h4>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section__title" data-name="meeeeeeee">An intro to selectors</h2>
+            <p class="section__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae mollitia, neque exercitationem recusandae vel adipisci tempore nemo earum molestias blanditiis asperiores excepturi quidem quod quia minima voluptas soluta, autem ullam.</p>
+            <input type="text" placeholder="Type some shit">
+            <input type="email" placeholder="Type an email">
+            <input type="radio" value="yes"><label>Fuck Yes</label>
+            <h4 class="subtitle">weeee</h4>
+            <input type="radio" value="no"><label>Fuck No</label>
+        </section>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+        </ul>
+
+        <div class="demo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, beatae!</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
