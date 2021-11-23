@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 50px;
+      background-color: aliceblue;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      /* width: 500px; */
+      /* height: 500px; */
+      border: 1px solid #ccc;
+
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      padding: 50px 25px 0;  /* top, right & left, bottom */
+      padding: 50px 25px 50px 25px; /* top, right, bottom, left (clockwise) */
+      padding: 50px 25px; /* top & bottom, right & left */
+
+      position: relative;
+    }
+
+    .card span {
+      display: block;
+      font-size: 100px;
+      height: 100px;
+      width: 100px;
+      text-align: center;
+      line-height: 76px;
+      background-color: aqua;
+      border-radius: 50%;
+      position: absolute;
+
+      bottom: -50px;
+      right: -50px;
+      z-index: 10;
+    }
+
+    .content {
+      background-color: aliceblue;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1>CSS Box Model</h1>
+
+  <div class="card">
+    <div class="content">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quaerat fugiat sint atque porro sequi soluta quidem officia alias, laboriosam fugit eveniet inventore, sit consectetur, perferendis aliquam animi? Tenetur, iure!</p>
+    </div>
+    <span>&times;</span>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quaerat fugiat sint atque porro sequi soluta quidem officia alias, laboriosam fugit eveniet inventore, sit consectetur, perferendis aliquam animi? Tenetur, iure!</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quaerat fugiat sint atque porro sequi soluta quidem officia alias, laboriosam fugit eveniet inventore, sit consectetur, perferendis aliquam animi? Tenetur, iure!</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Card Title</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quaerat fugiat sint atque porro sequi soluta quidem officia alias, laboriosam fugit eveniet inventore, sit consectetur, perferendis aliquam animi? Tenetur, iure!</p>
+  </div>
+  
+</body>
+</html>
