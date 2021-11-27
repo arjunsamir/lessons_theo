@@ -1,0 +1,86 @@
+/* Global Style Rest */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+header, section {
+  padding: 50px 100px;
+}
+
+section {
+  background: #fafafa;
+  min-height: 50vh;
+}
+
+
+.card {
+  max-width: 420px;
+  padding: 20px;
+
+  background-color: white;
+  border-radius: 40px;
+}
+
+
+.card__image {
+  height: 300px;
+  position: relative;
+}
+
+.card__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 32px;
+}
+
+.card__cta {
+  display: block;
+  height: 56px;
+  width: 56px;
+  padding: 16px;
+  border: none;
+  background-color: #333;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 16px;
+  bottom: calc(56px / -2);
+}
+
+.card__content {
+  padding: 24px 16px 16px;
+  position: relative;
+}
+
+.card__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card__price {
+  font-size: 24px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
