@@ -8,7 +8,7 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
   
-    width: 100vw;
+    width: 50vw;
     overflow-x: hidden;
   }
 
@@ -53,6 +53,10 @@
   .ResetMess p{
     line-height: 1.5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 45vw;
+    padding: 10px 30px 20px 0px;
+    text-align: justify;
+  
   }
 
   .resetBtn {
@@ -68,4 +72,5 @@
     text-decoration: none;
     border: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
   }
