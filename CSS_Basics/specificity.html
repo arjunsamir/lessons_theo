@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+
+    <style>
+        /* User Agent Style Sheets/Browser Styles */
+        .h1 {
+            font-family: monospace !important;
+            color: blueviolet;
+        }
+
+        .main h1.h1 {
+            color: green;
+        }
+        
+        .main .h1 {
+            color: red;
+        }
+
+        .box {
+            width: 50vh;
+            height: 50vh;
+            background-color: honeydew;
+        }
+
+        .inheritance {
+            color: blueviolet;
+            font-weight: 300;
+            font-size: 60px;
+            font-style: italic;
+            text-transform: uppercase;
+            text-decoration: underline;
+            background-color: rgba(234, 108, 223, 0.5);
+        }
+
+        a {
+            background-color: currentColor;
+        }
+
+        h1 {
+            font-weight: inherit;
+            background-color: inherit;
+
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main" id="main">
+        <h1 id="h1" class="h1">This is a H1</h1>
+
+        <div class="box"></div>
+
+
+        <section class="inheritance">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est repellat iusto molestiae natus accusamus officiis cumque nam at odit assumenda, qui praesentium ad error! Reiciendis dolor animi et quisquam totam! <a href="#">I'm a link</a></p>
+        </section>
+    </main>
+    
+</body>
+</html>
