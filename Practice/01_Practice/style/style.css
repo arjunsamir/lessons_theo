@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .component{
+      padding: 50px 100px;;
+  }
+
+  .BackBtn {
+    
+    box-sizing: border-box;
+    max-width: 100px;
+    
+    position: relative;
+    
+  }
+
+  .backText  {
+      position: absolute;
+      top: 5px;
+      left : 40px;
+      border: none;
+      font-size: 18px;
+  }
+  
+  img  {
+    display: inline;
+    max-width: 30%;
+    object-position: center;
+  
+  }
+
+  .ResetMess {
+     box-sizing: border-box;
+      margin-top: 64px;
+  }
+
+  .ResetMess h1{
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .ResetMess p{
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .resetBtn {
+    display: block;
+    padding-top: 40px;
+   
+  }
+
+  .resetBtn button{
+    background-color: #333;
+    color: white;
+    padding : 12px 36px;
+    text-decoration: none;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
