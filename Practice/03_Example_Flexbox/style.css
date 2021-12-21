@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 html {
   /* 16px (16 * .625 = 10) */
   font-size: 62.5%;
@@ -23,6 +28,17 @@ html {
 .dashboard {
   height: 100vh;
   display: flex;
+}
+
+.dashboard__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6.4rem 0;
+}
+
+.dashboard__nav > *:not(:last-child) {
+  margin-bottom: 6.4rem;
 }
 
 .dashboard__nav, .dashboard__sidebar {
@@ -90,6 +106,11 @@ html {
 
 .dashboard__links {
   list-style: none;
+  flex-grow: 10;
+}
+
+.dashboard__link:not(:last-child) {
+  margin-bottom: 1.2rem;
 }
 
 .dashboard__link a {
@@ -116,4 +137,42 @@ html {
 
 .dashboard__link {
   padding: .8rem var(--x-spacing);
+}
+
+.dashboard__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard__user h5 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.dashboard__user div {
+  height: 6.4rem;
+  width: 6.4rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 1.2rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.dashboard__user img {
+  border-radius: 1rem;
+}
+
+.dashboard__user div span {
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: rgb(135, 224, 135);
+  border-radius: 50%;
+  border: 2px solid white;
+
+  position: absolute;
+  right: -0.8rem;
+  bottom: 0;
 }
