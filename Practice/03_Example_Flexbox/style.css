@@ -176,3 +176,176 @@ html {
   right: -0.8rem;
   bottom: 0;
 }
+
+
+/* Main Section */
+.dashboard__body {
+  display: flex;
+  flex-grow: 10;
+}
+
+.dashboard__main {
+  padding: 4.8rem;
+  flex-grow: 10;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 1.2rem;
+  padding-left: 1.6rem;
+  transition: border 0.2s;
+  max-width: 54rem;
+}
+
+.searchbar:focus-within {
+  border-color: black;
+}
+
+.searchbar svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.searchbar input {
+  border: none;
+  background: none;
+  display: block;
+  flex-grow: 10;
+  padding: 1.6rem;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+/* Header */
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.8rem;
+  align-items: center;
+}
+
+.dashboard__header h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+}
+
+.dashboard__header h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(109, 109, 109);
+}
+
+.dashboard__filter {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.dashboard__filter:hover {
+  border-color: black;
+}
+
+.dashboard__filter svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.dashboard__filter h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-right: 1.6rem;
+  color: rgb(136, 136, 136);
+}
+
+/* Sidebar */
+.dashboard__sidebar {
+  padding: 4.8rem;
+  display: flex;
+
+}
+
+.dashboard__sidebar > div {
+  background: black;
+  border-radius: 2.4rem;
+  padding: 4.8rem;
+  color: #fff;
+}
+
+.dashboard__sidebar-title {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+
+/* Icon Style */
+.icon {
+  --icon-size: 4.8rem;
+  --icon-bg: white;
+  --icon-color: black;
+
+  height: var(--icon-size); 
+  width: var(--icon-size);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--icon-bg);
+  border-radius: 50%;
+  color: var(--icon-color);
+
+}
+
+.icon svg {
+  height: calc(var(--icon-size) / 2); 
+  width: calc(var(--icon-size) / 2);
+}
+
+.icon.small {
+  --icon-size: 3.6rem;
+}
+
+.icon.large {
+  --icon-size: 6.4rem;
+}
+
+.icon.transparent {
+  --icon-bg: rgba(0, 0, 0, .25);
+}
+
+
+/* Stats */
+.stats {
+  margin-bottom: 2.4rem;
+}
+
+.stats > *:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+}
+
+.stat .icon {
+  margin-right: 2.4rem;
+}
+
+.stat__info h4 {
+ font-size: 2.4rem;
+}
+
+.stat__info h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
