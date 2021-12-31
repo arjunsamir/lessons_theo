@@ -187,6 +187,8 @@ html {
 .dashboard__main {
   padding: 4.8rem;
   flex-grow: 10;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .searchbar {
@@ -224,7 +226,7 @@ html {
 .dashboard__header {
   display: flex;
   justify-content: space-between;
-  margin-top: 4.8rem;
+  margin: 4.8rem 0;
   align-items: center;
 }
 
@@ -270,7 +272,6 @@ html {
 .dashboard__sidebar {
   padding: 4.8rem;
   display: flex;
-
 }
 
 .dashboard__sidebar > div {
@@ -348,4 +349,97 @@ html {
 .stat__info h6 {
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+.jumbo-tile {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  background-color: rgb(238, 231, 211);
+}
+
+.jumbo-tile .icon {
+  margin-bottom: 2rem;
+}
+
+.jumbo-tile__item h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.jumbo-tile__item h3 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.dashboard__stats-row {
+  margin-top: 4.8rem;
+  display: flex;
+  gap: 4.8rem;
+}
+
+.stat-tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: rgb(243, 226, 188);
+  padding: 4.8rem;
+  flex-grow: 1;
+  border-radius: 2.4rem;
+}
+
+.stat-tile.green {
+  background-color: rgb(135, 224, 135);
+}
+
+.stat-tile__info h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.stat-tile__info h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(121, 121, 121);
+}
+
+.stat-tile__info h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+
+.stat-tile__percent {
+  height: 10rem;
+  width: 10rem;
+  border: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-tile__percent h4 {
+  font-size: 2.4rem;
+}
+
+.stat-tile__trend {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+}
+
+.stat-tile__trend svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.stat-tile__trend.up svg {
+  transform: rotate(135deg);
+}
+
+.stat-tile__trend.down svg {
+  transform: rotate(-135deg);
 }
