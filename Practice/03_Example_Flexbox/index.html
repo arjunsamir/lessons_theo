@@ -123,7 +123,7 @@
         <!-- Searchbar -->
         <div class="searchbar">
           <svg>
-            <use href="./icons/icons.svg#language"></use>
+            <use href="./icons/icons.svg#search"></use>
           </svg>
           <input type="text" placeholder="search for stats">
         </div>
@@ -136,19 +136,210 @@
             <h3>Welcome to your dashboard</h3>
           </div>
           
-          <button>
+          <button class="dashboard__filter">
             <h6>Filters</h6>
             <svg>
-              <use href="./icons/icons.svg#language"></use>
+              <use href="./icons/icons.svg#filter"></use>
             </svg>
           </button>
 
         </header>
 
+        <!-- Jumbo Tile -->
+        <div class="jumbo-tile">
+
+          <div class="jumbo-tile__item">
+
+            <div class="icon large transparent">
+              <svg>
+                <use href="./icons/icons.svg#language"></use>
+              </svg>
+            </div>
+
+            <h6>Views</h6>
+            <h3>500</h3>
+            <h6>Per Day</h6>
+
+          </div>
+          
+          <div class="jumbo-tile__item">
+
+            <div class="icon large transparent">
+              <svg>
+                <use href="./icons/icons.svg#language"></use>
+              </svg>
+            </div>
+            
+            <h6>Visits</h6>
+            <h3>2000</h3>
+            <h6>Per Minute</h6>
+
+          </div>
+          
+          <div class="jumbo-tile__item">
+
+            <div class="icon large transparent">
+              <svg>
+                <use href="./icons/icons.svg#language"></use>
+              </svg>
+            </div>
+            
+            <h6>Orders</h6>
+            <h3>5100</h3>
+            <h6>Per Day</h6>
+
+          </div>
+
+        </div>
+
+        <div class="dashboard__stats-row">
+
+          <div class="stat-tile">
+
+            <div class="stat-tile__info">
+              <h3>Sales</h3>
+              <h6>Total Sales Today</h6>
+              <h2>$500</h2>
+            </div>
+
+            <div class="stat-tile__percent">
+              <h4>55%</h4>
+            </div>
+
+            <div class="stat-tile__trend up">
+              <svg>
+                <use href="./icons/icons.svg#arrow-back"></use>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="stat-tile green">
+
+            <div class="stat-tile__info">
+              <h3>Sales</h3>
+              <h6>Total Sales Today</h6>
+              <h2>$500</h2>
+            </div>
+
+            <div class="stat-tile__percent">
+              <h4>55%</h4>
+            </div>
+
+            <div class="stat-tile__trend down">
+              <svg>
+                <use href="./icons/icons.svg#arrow-back"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="dashboard__stats-row">
+
+          <div class="stat-tile">
+
+            <div class="stat-tile__info">
+              <h3>Sales</h3>
+              <h6>Total Sales Today</h6>
+              <h2>$500</h2>
+            </div>
+
+            <div class="stat-tile__percent">
+              <h4>55%</h4>
+            </div>
+
+            <div class="stat-tile__trend up">
+              <svg>
+                <use href="./icons/icons.svg#arrow-back"></use>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="stat-tile green">
+
+            <div class="stat-tile__info">
+              <h3>Sales</h3>
+              <h6>Total Sales Today</h6>
+              <h2>$500</h2>
+            </div>
+
+            <div class="stat-tile__percent">
+              <h4>55%</h4>
+            </div>
+
+            <div class="stat-tile__trend down">
+              <svg>
+                <use href="./icons/icons.svg#arrow-back"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <!-- Right Sidebar -->
-      <aside class="dashboard__sidebar"></aside>
+      <aside class="dashboard__sidebar">
+        <div>
+
+          <h3 class="dashboard__sidebar-title">Sales Revenue</h3>
+
+          <div class="stats">
+  
+            <div class="stat">
+              <div class="icon large">
+                <svg>
+                  <use href="./icons/icons.svg#language"></use>
+                </svg>
+              </div>
+              <div class="stat__info">
+                <h4>230k</h4>
+                <h6>Sales</h6>
+              </div>
+            </div>
+  
+            <div class="stat">
+              <div class="icon large">
+                <svg>
+                  <use href="./icons/icons.svg#language"></use>
+                </svg>
+              </div>
+              <div class="stat__info">
+                <h4>8.549k</h4>
+                <h6>Customers</h6>
+              </div>
+            </div>
+  
+            <div class="stat">
+              <div class="icon large">
+                <svg>
+                  <use href="./icons/icons.svg#language"></use>
+                </svg>
+              </div>
+              <div class="stat__info">
+                <h4>1.432k</h4>
+                <h6>Products</h6>
+              </div>
+            </div>
+  
+            <div class="stat">
+              <div class="icon large">
+                <svg>
+                  <use href="./icons/icons.svg#language"></use>
+                </svg>
+              </div>
+              <div class="stat__info">
+                <h4>$9,745</h4>
+                <h6>Revenue</h6>
+              </div>
+            </div>
+  
+          </div>
+
+          <h3 class="dashboard__sidebar-title">Statistics</h3>
+
+        </div>
+      </aside>
 
     </main>
 
