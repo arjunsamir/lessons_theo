@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.phone {
+  background-color: black;
+  color: #fff;
+
+  height: 90vh;
+  width: 41.5vh;
+  border-radius: 4.8rem;
+  position: relative;
+  overflow: hidden;
+
+  --notch-height: 4%;
+  --nav-height: 10%;
+}
+
+.phone__notch {
+  height: var(--notch-height);
+  width: 45%;
+  background-color: #fff;
+  border-bottom-left-radius: 2.4rem;
+  border-bottom-right-radius: 2.4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone__nav {
+  height: var(--nav-height);
+  width: 100%;
+  background-color: blueviolet;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.phone__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.phone__nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone__nav-item svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.phone__nav-item p {
+  font-size: 1.2rem;
+}
+
+.phone__main {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  /* We have to use calc in this case because we are mixing units. We want to add 24px of padding to whatever the hight of the notch was */
+  padding: calc(var(--notch-height) + 4.8rem) 2.4rem var(--nav-height);
+}
+
+
+/* AC Card Styles */
+.ac {
+  background-color: rgb(148, 179, 236);
+  border-radius: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  padding: 2.4rem;
+}
+
+.ac__controls {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.ac__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.ac__mode {
+  display: flex;
+}
+
+.ac__temp {
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+
+.ac__mode svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 0.4rem;
+}
+
+.ac__button {
+  border: none;
+  background-color: #fff;
+  height: 6.4rem;
+  width: 6.4rem;
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 300;
+  border-radius: 50%;
+}
+
+.ac__status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ac__actions {
+  display: flex;
+  justify-content: flex-end;
+}
