@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+
+.mainLayout{
+    background-color: aqua;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr ;
+    gap: 25px;
+}
+
+.mainLayout > div{
+    background-color: black;
+    color: wheat;
+}
+
+.one{
+    grid-column: 1/-1;
+}
+
+.five{
+    grid-column: 1/-1;
+}
