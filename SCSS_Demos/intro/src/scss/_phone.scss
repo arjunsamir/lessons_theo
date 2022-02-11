@@ -1,0 +1,73 @@
+$notch-height: 4%;
+$nav-height: 10%;
+
+.phone {
+  background-color: black;
+  color: #fff;
+
+  height: 90vh;
+  width: 41.5vh;
+  border-radius: 4.8rem;
+  position: relative;
+  overflow: hidden;
+
+  --notch-height: #{$notch-height};
+  --nav-height: #{$nav-height};
+
+  &__notch {
+    height: var(--notch-height);
+    width: 45%;
+    background-color: #fff;
+    border-bottom-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__nav {
+    height: var(--nav-height);
+    width: 100%;
+    background-color: blueviolet;
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-bottom: 0.4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+    }
+
+  }
+
+  &__main {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    /* We have to use calc in this case because we are mixing units. We want to add 24px of padding to whatever the hight of the notch was */
+    padding: calc(var(--notch-height) + 4.8rem) 2.4rem var(--nav-height);
+  }
+
+}

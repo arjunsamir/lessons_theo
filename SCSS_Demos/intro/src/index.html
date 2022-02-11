@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCSS Demo</title>
+
+  <link rel="stylesheet" href="scss/main.scss">
+
+</head>
+<body>
+
+  <div class="phone">
+    <div class="phone__notch"></div>
+    <nav class="phone__nav">
+      <ul>
+
+        <li class="phone__nav-item">
+          <svg>
+            <use href="./icons.svg#facebook"></use>
+          </svg>
+          <p>Scenes</p>
+        </li>
+
+        <li class="phone__nav-item">
+          <svg>
+            <use href="./icons.svg#google"></use>
+          </svg>
+          <p>Devices</p>
+        </li>
+
+        <li class="phone__nav-item">
+          <svg>
+            <use href="./icons.svg#car"></use>
+          </svg>
+          <p>Scenes</p>
+        </li>
+
+      </ul>
+    </nav>
+    <main class="phone__main">
+      <!-- Air Conditioning Card -->
+      <div class="ac">
+
+        <!-- AC Status Bar -->
+        <div class="ac__status">
+
+          <h2>AC</h2>
+
+          <div class="toggle">
+            <p>on</p>
+            <span></span>
+          </div>
+
+        </div>
+
+        <!-- AC Controls -->
+        <div class="ac__controls">
+          <button class="ac__button">-</button>
+          <div class="ac__info">
+            <h1 class="ac__temp">69&deg;</h1>
+            <div class="ac__mode">
+              <svg>
+                <use href="./icons.svg#language"></use>
+              </svg>
+              <p>Cool</p>
+            </div>
+          </div>
+          <button class="ac__button">+</button>
+        </div>
+
+        <div class="ac__actions">
+          <button class="button">Options</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  
+</body>
+</html>

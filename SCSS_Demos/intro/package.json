@@ -1,0 +1,15 @@
+{
+  "name": "scss_intro",
+  "version": "1.0.0",
+  "description": "This is an intro to sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --dist-dir dist",
+    "build": "parcel build src/index.html --dist-dir dist"
+  },
+  "author": "Arjun Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.3.1"
+  }
+}

@@ -1,0 +1,62 @@
+/* AC Card Styles */
+.ac {
+  background-color: rgb(148, 179, 236);
+  border-radius: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  padding: 2.4rem;
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  &__mode {
+
+    display: flex;
+
+    svg {
+      height: 2.4rem;
+      width: 2.4rem;
+      margin-right: 0.4rem;
+    }
+
+  }
+
+  &__temp {
+    font-size: 4.8rem;
+    font-weight: 400;
+  }
+
+  &__button {
+    border: none;
+    background-color: #fff;
+    height: 6.4rem;
+    width: 6.4rem;
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 300;
+    border-radius: 50%;
+  }
+
+  &__status {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
