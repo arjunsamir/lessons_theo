@@ -8,6 +8,7 @@ $shadow:
 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
 100px 100px 80px rgba(0, 0, 0, 0.07)
 ;
+$overlap: 20px;
 
 
 body{
@@ -40,8 +41,10 @@ body{
             background-color: white;
             border-radius: 6px;
             box-shadow: $shadow;
+            transform: translateX($overlap);
+            z-index: 1;
 
-            &::before{
+            &::before{ //this is the markeup for the pseudo element 
                 content: "";
                 display: block;
                 position: absolute;
@@ -57,12 +60,19 @@ body{
     }
 
     .circle{
-
+        position: relative;
         height: 100px;
         width:100px;
         border-radius: 50%;
         border: 25px solid white;
+        box-shadow:$shadow;
 
+    }
+    .circle:last-child{
+        transform: translateX(-$overlap);
+        //border-color: rgba(255, 255, 255, 0.87);
+        z-index: -1;
+        
     }
 
 }
