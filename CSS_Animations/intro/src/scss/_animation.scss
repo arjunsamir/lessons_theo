@@ -1,0 +1,34 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: .5;
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: rotate(180deg) scale(2);
+    opacity: 1;
+    background-color: coral;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: .5;
+    background-color: cornflowerblue;
+  }
+}
+
+
+.centered {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+  background-color: cornflowerblue;
+  animation: rotate 2s linear infinite;
+}
