@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Input = ({ addItem }) => {
+const Input = ({ addItem }) => { // destructure the function we defined out and name it addItem
 
   const [value, setValue] = useState("")
 
@@ -18,13 +18,14 @@ const Input = ({ addItem }) => {
         // Reset input value
         setValue("")
       }}>
+        
         <input
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder="Add new item..."
         />
-        <button type="submit">Checkmark</button>
+        <button type="submit">Add Todo</button>
       </form>
     </li>
   )
