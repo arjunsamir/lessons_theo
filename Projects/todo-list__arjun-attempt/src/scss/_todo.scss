@@ -7,6 +7,8 @@
   align-items: center;
 
   background-color: rgb(247, 247, 247);
+
+  --transition: 0.2s ease-in-out;
   
   &__container {
     background-color: #fff;
@@ -32,13 +34,20 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+
+    & > li {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
     gap: 1.2rem;
+    height: 2.4rem;
+
+    // Transitions are NOT run on initial renders. They run after a change is detected.
+    transition: opacity 1s ease, height 1s ease, margin 1s ease;
 
     // cursor: pointer;
 
@@ -83,6 +92,51 @@
 
   &__item.checked &__bullet::after {
     transform: scale(1);
+  }
+
+  &__add {
+
+    form {
+      display: flex;
+      align-items: center;
+      border-bottom: 3px solid black;
+      width: max-content;
+      padding-bottom: 0.8rem;
+      transition: border-color var(--transition);
+
+      &:focus-within {
+        border-color: cornflowerblue;
+      }
+    }
+
+    input {
+      display: block;
+      height: 4.8rem;
+      border: none;
+      font-size: 1.8rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      display: block;
+      border: none;
+      border-radius: 50%;
+      height: 4.8rem;
+      width: 4.8rem;
+      cursor: pointer;
+      color: black;
+
+      transition: background-color var(--transition), color var(--transition);
+      
+      &:hover {
+        background-color: cornflowerblue;
+        color: white;
+      }
+    }
+
   }
 
 }

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { CheckmarkOutline } from "react-ionicons"
 
 const Input = ({ addItem }) => {
 
@@ -24,7 +25,7 @@ const Input = ({ addItem }) => {
           onChange={(e) => setValue(e.target.value)}
           placeholder="Add new item..."
         />
-        <button type="submit">Checkmark</button>
+        <button type="submit"><CheckmarkOutline color="currentColor" /></button>
       </form>
     </div>
   )
