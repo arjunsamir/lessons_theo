@@ -5,7 +5,7 @@ const Input = ({ addItem }) => {
   const [value, setValue] = useState("")
 
   return (
-    <li className="todo__add">
+    <div className="todo__add">
       <form onSubmit={(e) => {
         e.preventDefault()
         
@@ -26,7 +26,7 @@ const Input = ({ addItem }) => {
         />
         <button type="submit">Checkmark</button>
       </form>
-    </li>
+    </div>
   )
 
 }
