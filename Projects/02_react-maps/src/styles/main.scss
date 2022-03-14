@@ -1,0 +1,14 @@
+@import "reset";
+
+.google-map {
+  width: 100%;
+  background-color: gray;
+  flex-grow: 10;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
