@@ -11,7 +11,7 @@ function App() {
   const mapElementRef = useRef()
 
   // Load Map Script Dynamically
-  const googleMapsIsLoaded = useAsyncScript(config.gMaps.url + config.gMaps.key, "google-map-api");
+  const googleMapsIsLoaded = useAsyncScript(`${config.gMaps.url}?key=${config.gMaps.key}&libraries=places`);
 
   // Get User Loacation
   const [userLocation, setUserLocation] = useLocation()
@@ -36,6 +36,32 @@ function App() {
 
     // Zoom to User Location
     mapRef.current.setCenter(userLocation)
+
+    // use the location to find ramen places
+
+    // Pass the data we want into the request
+    const request = {
+      query: 'ramen',
+      fields: ['name', 'geometry'],
+    };
+
+    console.log(window.google.maps.PlacesService)
+
+
+    return;
+  
+    // Create a Places Service
+    const service = new window.google.maps.places.PlacesService(mapRef.current);
+
+    service.findPlaceFromQuery(request, function(results, status) {
+      if (status === window.google.maps.places.PlacesServiceStatus.OK) {
+        console.log(results);
+        // for (var i = 0; i < results.length; i++) {
+        //   createMarker(results[i]);
+        // }
+        // mapRef.current.setCenter(results[0].geometry.location);
+      }
+    });
     
 
   }, [userLocation, googleMapsIsLoaded])
