@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+
+.circle {
+  height: 20rem;
+  width: 20rem;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+}
+
+.words {
+  display: flex;
+  gap: 0.8rem;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}

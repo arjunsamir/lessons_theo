@@ -1,0 +1,16 @@
+{
+  "name": "JS_Animations",
+  "version": "1.0.0",
+  "description": "Lets do some animation",
+  "main": "index.js",
+  "author": "Arjun Patel",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "parcel": "^2.6.0"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+}
