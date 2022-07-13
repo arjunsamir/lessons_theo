@@ -10,7 +10,7 @@
     "parcel": "^2.6.0"
   },
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index2.html",
     "build": "parcel build index.html"
   }
 }
